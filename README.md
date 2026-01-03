@@ -1,4 +1,4 @@
-# FIXED: NVIDIA RTX 5070 on Ubuntu 24.04 / 24.10 — Working 580-open Driver Guide
+# FIXED: NVIDIA RTX 5070 on Ubuntu 24.04 / 24.10 — Working Open Driver Guide
 
 **Author:** Adam N.
 
