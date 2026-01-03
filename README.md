@@ -4,7 +4,7 @@
 
 **Why this exists:** No one should suffer through NVIDIA 50xx driver compatibility hell.
 
-This guide documents the **exact steps** required to make the RTX 5070 fully functional on Ubuntu using the correct `nvidia-driver-580-open` package. This resolves black screens, broken boot, missing monitors, nvidia-smi failures, and partial/failed installs.
+This guide documents the **exact steps** required to make the RTX 5070 fully functional on Ubuntu using the correct `nvidia-driver-open` package. This resolves black screens, broken boot, missing monitors, nvidia-smi failures, and partial/failed installs.
 
 ---
 
@@ -73,7 +73,7 @@ ls /etc/apt/preferences.d/
 
 ```bash
 sudo apt update
-sudo apt install -y nvidia-driver-580-open
+sudo apt install -y nvidia-driver-open
 ```
 
 This pulls in:
@@ -106,6 +106,7 @@ Driver Version: 580.82.07
 CUDA Version: 13.0
 GPU: NVIDIA GeForce RTX 5070
 ```
+or something similar, depending on current NVIDIA open driver version.
 
 **check Kernel Modules**
 
@@ -149,7 +150,7 @@ wayland
     * partial installs
     * boot failure
 
-4. Installing 580-open directly avoids this completely.
+4. Installing 580-open (or newer driver) directly avoids this completely.
 
 ---
 
