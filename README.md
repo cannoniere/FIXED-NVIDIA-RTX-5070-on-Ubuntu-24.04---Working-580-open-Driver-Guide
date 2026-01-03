@@ -1,4 +1,4 @@
-# FIXED: NVIDIA RTX 5070 on Ubuntu 24.04 / 24.10 — Working 580-open Driver Guide
+# FIXED: NVIDIA RTX 5070 on Ubuntu 24.04 / 24.10 — Working Open Driver Guide
 
 **Author:** Adam N.
 
@@ -73,7 +73,7 @@ ls /etc/apt/preferences.d/
 
 ```bash
 sudo apt update
-sudo apt install -y nvidia-driver-580-open
+sudo apt install -y nvidia-driver-open #Pulls newest version - currently 590
 ```
 
 This pulls in:
@@ -106,6 +106,7 @@ Driver Version: 580.82.07
 CUDA Version: 13.0
 GPU: NVIDIA GeForce RTX 5070
 ```
+or whatever the current open driver version is.
 
 **check Kernel Modules**
 
